@@ -1,5 +1,5 @@
 {% set name = "build123d" %}
-{% set version = "0.9.1" %}
+{% set version = "0.11.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,14 +8,14 @@ package:
 
 source:
   url: https://github.com/gumyr/build123d/archive/v{{ version }}.tar.gz
-  sha256: d339879e8a343cfbf3382d6ff13c852728447e3c681debcaf10c198185816a75
+  sha256: d631921f94683a3def1263e2535b6d712c4d945e984a9eba83e7774f127f23f6
   patches:
     - 0001-Fix-dependency-versions-and-lib3mf-usage.patch
     - 0002-Add-files-to-MANIFEST.in.patch
 
 build:
   noarch: python
-  number: 1
+  number: 0
 
 requirements:
   host:
